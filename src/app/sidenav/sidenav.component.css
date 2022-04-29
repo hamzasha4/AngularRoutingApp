@@ -1,0 +1,38 @@
+.logo{
+    font-size: 22px;
+    text-align: center;
+    padding-right:0px ;
+    font-family:sans-serif;
+}
+img{
+    width: 50%;
+}
+.mat-icon{
+    vertical-align: center ;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+.mat-list-item{
+    color: black;
+    font-size: 16px;
+    height: 44px !important;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    /* margin: 0 8px; */
+}
+.mat-list-item:hover{
+        background: #d9eae6;        
+    }
+mat-nav-list{
+    padding: 0px;
+}
+.list-item-active{
+    color: #dc3545;
+    background:#d9eae6 ;
+}
+.list-item-active:hover{
+    background:#d9eae6 !important;
+}
+::ng-deep .list-item-active{
+    background:#d9eae6 !important;
+}

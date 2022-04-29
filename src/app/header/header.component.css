@@ -1,0 +1,33 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* on top of everything */
+    min-height: 45px;
+    
+  }
+ mat-toolbar-row{
+    height:45px
+ }
+  ul li {
+      list-style: none;
+  }
+  button {
+    outline: none;
+    border: 0;
+    background: transparent;
+  }
+  .user {
+    font-size: 14px;
+  }
+  mat-toolbar {
+    background: #d9eae6;        
+    ;
+  }
+  .user-image {
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+  }
+  ::ng-deep .mat-menu-content{
+    width: 180px;
+  }
