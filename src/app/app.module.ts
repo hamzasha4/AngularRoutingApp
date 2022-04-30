@@ -24,6 +24,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.servic';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +53,8 @@ import { AuthGuard } from './auth-guard.servic';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]

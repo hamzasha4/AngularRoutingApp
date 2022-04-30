@@ -3,10 +3,10 @@
         <mat-toolbar id="Login" fxLayoutAlign="center center">Login Page</mat-toolbar>
         <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
             <mat-form-field >
-              <input matInput placeholder="Username">
+              <input matInput placeholder="Username" [(ngModel)]="UserName" name="username">
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Password" type="Password">
+              <input matInput placeholder="Password" type="Password" [(ngModel)]="Password" name="password">
             </mat-form-field>
             <button mat-raised-button id="Login" (click)="DashboardMenu()">Login</button>
           </form>
