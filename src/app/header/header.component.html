@@ -12,13 +12,13 @@
               class="user mt-2 d-flex align-items-center"
             >
               <img src="./assets/User.png" alt="" class="user-image mr-1 p-2" />
-                 User Name
+                 {{UserName}}
               <mat-icon class="user-image-icon ml-1"
                 >keyboard_arrow_down</mat-icon
               >
             </button>
             <mat-menu #menu="matMenu"> <!--when button is clicked-->
-              <button mat-menu-item routerLink="/Login" routerLinkActive="list-item-active">
+              <button mat-menu-item (click)="logout()" routerLink="/" routerLinkActive="list-item-active">
                 <mat-icon>exit_to_app</mat-icon>
                 Logout
               </button>
