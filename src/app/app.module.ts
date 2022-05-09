@@ -26,6 +26,8 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.servic';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PracticeComponent } from './practice/practice.component';
+import { AnimationComponent } from './animation/animation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,9 @@ import { FormsModule } from '@angular/forms';
     SidenavComponent,
     HomeComponent,
     DashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    PracticeComponent,
+    AnimationComponent
     ],
   imports: [
     BrowserModule,
