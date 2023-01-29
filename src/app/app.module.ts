@@ -26,6 +26,13 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.servic';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PracticeComponent } from './practice/practice.component';
+import { AnimationComponent } from './animation/animation.component';
+import { DynamicFormComponent } from './DynamicForm/Components/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './DynamicForm/Components/dynamic-form-question/dynamic-form-question.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormioModule } from 'angular-formio';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +42,11 @@ import { FormsModule } from '@angular/forms';
     SidenavComponent,
     HomeComponent,
     DashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    PracticeComponent,
+    AnimationComponent,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent
     ],
   imports: [
     BrowserModule,
@@ -54,7 +65,9 @@ import { FormsModule } from '@angular/forms';
     MatDividerModule,
     MatListModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    FormioModule
   ],
   providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
